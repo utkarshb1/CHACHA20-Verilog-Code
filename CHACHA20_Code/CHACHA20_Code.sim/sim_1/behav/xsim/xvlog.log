@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/utkar/Documents/ISE/Vivado/chacha1/chacha1.srcs/sources_1/imports/chacha-master/src/rtl/chacha_qr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module chacha_qr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/utkar/Documents/ISE/Vivado/chacha1/chacha1.srcs/sources_1/imports/chacha-master/src/rtl/chacha.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module chacha
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/utkar/Documents/ISE/Vivado/chacha1/chacha1.srcs/sources_1/imports/chacha-master/src/tb/tb_chacha.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_chacha
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/utkar/Documents/ISE/Vivado/chacha1/chacha1.srcs/sources_1/imports/rtl/chacha_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module chacha_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/utkar/Documents/ISE/Vivado/chacha1/chacha1.srcs/sources_1/new/add_xor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_xor
