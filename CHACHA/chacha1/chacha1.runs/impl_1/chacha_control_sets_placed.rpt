@@ -1,0 +1,102 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Jun 24 16:35:17 2019
+| Host         : LAPTOP-JSL42T1L running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file chacha_control_sets_placed.rpt
+| Design       : chacha
+| Device       : xc7z020
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    35 |
+| Unused register locations in slices containing registers |    21 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            2 |
+|      5 |            1 |
+|     10 |            1 |
+|    16+ |           31 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              10 |            8 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               4 |            2 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1949 |          804 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+--------------------------------------------+----------------------------+------------------+----------------+
+|  Clock Signal  |                Enable Signal               |      Set/Reset Signal      | Slice Load Count | Bel Load Count |
++----------------+--------------------------------------------+----------------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                                            | core/reset_n               |                2 |              4 |
+|  clk_IBUF_BUFG | core/dr_ctr_we                             | core/dr_ctr_reg[3]_i_1_n_0 |                1 |              4 |
+|  clk_IBUF_BUFG | rounds_we4_out                             | core/reset_n               |                3 |              5 |
+|  clk_IBUF_BUFG |                                            |                            |                8 |             10 |
+|  clk_IBUF_BUFG | core/FSM_onehot_chacha_ctrl_reg[4]_i_2_n_0 | core/reset_n               |                8 |             20 |
+|  clk_IBUF_BUFG | core/block0_ctr_we                         | core/reset_n               |                8 |             32 |
+|  clk_IBUF_BUFG | data_in_reg[11][31]_i_1_n_0                | core/reset_n               |               13 |             32 |
+|  clk_IBUF_BUFG | data_in_reg[14][31]_i_1_n_0                | core/reset_n               |               17 |             32 |
+|  clk_IBUF_BUFG | data_in_reg[13][31]_i_1_n_0                | core/reset_n               |               12 |             32 |
+|  clk_IBUF_BUFG | data_in_reg                                | core/reset_n               |               16 |             32 |
+|  clk_IBUF_BUFG | data_in_reg[15][31]_i_1_n_0                | core/reset_n               |               20 |             32 |
+|  clk_IBUF_BUFG | data_in_reg[1][31]_i_1_n_0                 | core/reset_n               |               16 |             32 |
+|  clk_IBUF_BUFG | data_in_reg[2][31]_i_1_n_0                 | core/reset_n               |               20 |             32 |
+|  clk_IBUF_BUFG | data_in_reg[3][31]_i_1_n_0                 | core/reset_n               |               17 |             32 |
+|  clk_IBUF_BUFG | data_in_reg[4][31]_i_1_n_0                 | core/reset_n               |               20 |             32 |
+|  clk_IBUF_BUFG | data_in_reg[12][31]_i_1_n_0                | core/reset_n               |               19 |             32 |
+|  clk_IBUF_BUFG | data_in_reg[6][31]_i_1_n_0                 | core/reset_n               |               17 |             32 |
+|  clk_IBUF_BUFG | data_in_reg[10][31]_i_1_n_0                | core/reset_n               |               13 |             32 |
+|  clk_IBUF_BUFG | data_in_reg[8][31]_i_1_n_0                 | core/reset_n               |               10 |             32 |
+|  clk_IBUF_BUFG | key_reg[1][31]_i_1_n_0                     | core/reset_n               |               12 |             32 |
+|  clk_IBUF_BUFG | nonce_reg[1][31]_i_1_n_0                   | core/reset_n               |               12 |             32 |
+|  clk_IBUF_BUFG | key_reg[2][31]_i_1_n_0                     | core/reset_n               |               15 |             32 |
+|  clk_IBUF_BUFG | key_reg[6][31]_i_1_n_0                     | core/reset_n               |                9 |             32 |
+|  clk_IBUF_BUFG | key_reg[5][31]_i_1_n_0                     | core/reset_n               |                9 |             32 |
+|  clk_IBUF_BUFG | key_reg[4][31]_i_1_n_0                     | core/reset_n               |                9 |             32 |
+|  clk_IBUF_BUFG | data_in_reg[7][31]_i_1_n_0                 | core/reset_n               |               20 |             32 |
+|  clk_IBUF_BUFG | key_reg[7][31]_i_1_n_0                     | core/reset_n               |               12 |             32 |
+|  clk_IBUF_BUFG | key_reg[0][31]_i_1_n_0                     | core/reset_n               |               13 |             32 |
+|  clk_IBUF_BUFG | nonce_reg[2][31]_i_1_n_0                   | core/reset_n               |               12 |             32 |
+|  clk_IBUF_BUFG | data_in_reg[9][31]_i_1_n_0                 | core/reset_n               |               17 |             32 |
+|  clk_IBUF_BUFG | nonce_reg                                  | core/reset_n               |               12 |             32 |
+|  clk_IBUF_BUFG | key_reg[3][31]_i_1_n_0                     | core/reset_n               |               11 |             32 |
+|  clk_IBUF_BUFG | data_in_reg[5][31]_i_1_n_0                 | core/reset_n               |               19 |             32 |
+|  clk_IBUF_BUFG | core/state_we                              | core/reset_n               |              181 |            512 |
+|  clk_IBUF_BUFG | core/ready_new                             | core/reset_n               |              211 |            512 |
++----------------+--------------------------------------------+----------------------------+------------------+----------------+
+
+

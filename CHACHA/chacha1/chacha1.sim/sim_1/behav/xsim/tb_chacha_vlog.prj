@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../chacha1.srcs/sources_1/imports/chacha-master/src/rtl/chacha_qr.v" \
+"../../../../chacha1.srcs/sources_1/imports/chacha-master/src/rtl/chacha.v" \
+"../../../../chacha1.srcs/sources_1/imports/chacha-master/src/tb/tb_chacha.v" \
+"../../../../chacha1.srcs/sources_1/imports/rtl/chacha_core.v" \
+"../../../../chacha1.srcs/sources_1/new/add_xor.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,10 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/utkar/Documents/ISE/Vivado/chacha1/chacha1.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/utkar/Documents/ISE/Vivado/chacha1/chacha1.srcs/sources_1/imports/chacha-master/src/rtl/chacha.v,1561200188,verilog,,C:/Users/utkar/Documents/ISE/Vivado/chacha1/chacha1.srcs/sources_1/imports/chacha-master/src/tb/tb_chacha.v,,chacha,,,,,,,,
+C:/Users/utkar/Documents/ISE/Vivado/chacha1/chacha1.srcs/sources_1/imports/chacha-master/src/rtl/chacha_qr.v,1561367228,verilog,,C:/Users/utkar/Documents/ISE/Vivado/chacha1/chacha1.srcs/sources_1/imports/chacha-master/src/rtl/chacha.v,,chacha_qr,,,,,,,,
+C:/Users/utkar/Documents/ISE/Vivado/chacha1/chacha1.srcs/sources_1/imports/chacha-master/src/tb/tb_chacha.v,1561378632,verilog,,C:/Users/utkar/Documents/ISE/Vivado/chacha1/chacha1.srcs/sources_1/imports/rtl/chacha_core.v,,tb_chacha,,,,,,,,
+C:/Users/utkar/Documents/ISE/Vivado/chacha1/chacha1.srcs/sources_1/imports/rtl/chacha_core.v,1561288220,verilog,,C:/Users/utkar/Documents/ISE/Vivado/chacha1/chacha1.srcs/sources_1/new/add_xor.v,,chacha_core,,,,,,,,
+C:/Users/utkar/Documents/ISE/Vivado/chacha1/chacha1.srcs/sources_1/new/add_xor.v,1561365028,verilog,,,,add_xor,,,,,,,,
